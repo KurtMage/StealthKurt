@@ -25421,6 +25421,7 @@ GameObject:
   - 82: {fileID: 1124621999}
   - 81: {fileID: 1124621998}
   - 114: {fileID: 1124622003}
+  - 114: {fileID: 1124622004}
   m_Layer: 0
   m_Name: char_ethan
   m_TagString: Player
@@ -25568,6 +25569,20 @@ MonoBehaviour:
   shoutingClip: {fileID: 8300000, guid: f2e0ffd43812bf642a502c434b572c75, type: 3}
   turnSmoothing: 15
   speedDampTime: .100000001
+--- !u!114 &1124622004
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1124621996}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fb87560ed775fc34188e9507bbf2b699, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 100
+  resetAfterDeathTime: 5
+  deathClip: {fileID: 0}
 --- !u!1 &1126541281
 GameObject:
   m_ObjectHideFlags: 0
