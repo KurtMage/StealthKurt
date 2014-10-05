@@ -46,6 +46,7 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\CCTVPlayerDetection.cs" />
      <Compile Include="Assets\Done\DoneScripts\AlarmSystems\DoneAlarmLight.cs" />
      <Compile Include="Assets\Done\DoneScripts\AlarmSystems\DoneCCTVPlayerDetection.cs" />
      <Compile Include="Assets\Done\DoneScripts\AlarmSystems\DoneLaserBlinking.cs" />
