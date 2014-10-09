@@ -44,7 +44,12 @@ public class EnemyShooting : MonoBehaviour {
 
 		if (shot > 0.5f && !shooting)
 		{
-
+			Shoot();
 		}
+	}
+
+	void Shoot()
+	{
+
 	}
 }
