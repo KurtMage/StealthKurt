@@ -46,10 +46,39 @@ public class EnemyShooting : MonoBehaviour {
 		{
 			Shoot();
 		}
+
+		if (shot < 0.5f)
+		{
+			shooting = false;
+			laserShotLine.enabled = false;
+		}
+
+		laserShotLight.intensity = Mathf.Lerp (laserShotLight.intensity, 0, Time.deltaTime * fadeSpeed);
+	}
+
+	void OnAnimatorIK(int layerIndex)
+	{
+		float aimWeight = anim.GetFloat (hash.aimWeightFloat);
+		anim.SetIKPosition (AvatarIKGoal.RightHand, player.position + Vector3.up * 1.5f);
+		anim.SetIKPositionWeight (AvatarIKGoal.RightHand, aimWeight);
 	}
 
 	void Shoot()
 	{
+		shooting = true;
+		float fractionalDistance = (col.radius - Vector3.Distance(transform.position, player.position)) / col.radius;
+		float damage = scaledDamage * fractionalDistance + minDamage;
+		playerHealth.TakeDamage (damage);
+		ShotEffects ();
 
+	}
+
+	void ShotEffects()
+	{
+		laserShotLine.SetPosition (0, laserShotLine.transform.position);
+		laserShotLine.SetPosition (1, player.position + Vector3.up * 1.5f);
+		laserShotLine.enabled = true;
+		laserShotLight.intensity = flashIntensity;
+		AudioSource.PlayClipAtPoint (shotClip, laserShotLine.transform.position);
 	}
 }

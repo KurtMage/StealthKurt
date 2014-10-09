@@ -70,13 +70,13 @@
      <Compile Include="Assets\Done\DoneScripts\UnappliedScripts\DoneAnimatorSetup.cs" />
      <Compile Include="Assets\Done\DoneScripts\UnappliedScripts\DoneTags.cs" />
      <Compile Include="Assets\Done\DoneScripts\UnappliedScripts\guiTextSet.cs" />
-     <Compile Include="Assets\EnemyShooting.cs" />
      <Compile Include="Assets\Scripts\AlarmSystems\AlarmLight.cs" />
      <Compile Include="Assets\Scripts\AlarmSystems\CCTVPlayerDetection.cs" />
      <Compile Include="Assets\Scripts\AlarmSystems\LaserBlinking.cs" />
      <Compile Include="Assets\Scripts\AlarmSystems\LaserPlayerDetection.cs" />
      <Compile Include="Assets\Scripts\AlarmSystems\LaserSwitchDeactivation.cs" />
      <Compile Include="Assets\Scripts\Enemy\EnemyAnimation.cs" />
+     <Compile Include="Assets\Scripts\Enemy\EnemyShooting.cs" />
      <Compile Include="Assets\Scripts\Enemy\EnemySight.cs" />
      <Compile Include="Assets\Scripts\GameController\HashIDs.cs" />
      <Compile Include="Assets\Scripts\GameController\LastPlayerSighting.cs" />
